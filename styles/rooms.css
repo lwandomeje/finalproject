@@ -1,0 +1,65 @@
+.rooms{
+    width: 100%;
+    background-color:rgb(223, 219, 209);
+}
+
+h1{
+    text-align: center;
+    color: #caab0cc9;
+    font-size: 60px;
+    padding-top:25px ;
+}
+
+img{
+    width:40% ;
+    height: 450px;
+}
+
+
+.room-content{
+border: dotted;
+border-color: #caab0cc9 ;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+    
+}
+
+.room-content h1{
+    padding-top:1%;
+    padding-left:15%;
+    color: #806a01c9 ;
+    font-size: 30px;
+
+}
+
+.room-content h2 {
+    padding-top: 23%;
+    color:#685f30c9;
+}
+
+.room-content button{
+    height: 28px;
+}
+
+/* Media query to change display options of about section */
+@media screen and (max-width: 768px) {
+    .room-content {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  
+    .room-content > div,
+    .room-content> img {
+      width: 100%;
+    }
+  
+    .room-content > div:nth-child(odd) {
+      background-color: #e9c46a;
+    }
+  }
+
+
+
+
+

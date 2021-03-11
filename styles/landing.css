@@ -1,0 +1,112 @@
+
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  } 
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:goldenrod;
+    height: 40px;
+    padding: 10px 10%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    transition: all 0.2s linear;
+  }
+  
+  .nav-link a {
+    text-decoration: none;
+    color: darkblue;
+    padding: 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link a:hover {
+    color: white;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 535px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      width: 0px;
+      overflow: hidden;
+      position: fixed;
+      top: 40px;
+      background: black;
+      left: 0;
+      justify-content: center;
+      height: 40px;
+      align-items: center;
+    }
+  }
+
+  .landing {
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/photos/hotel5.webp");
+    background-size: cover;
+  }
+
+
+
+
+  .landing h1{
+    font-size: 50px;
+    color:white;
+  }
+
+.test {
+  background-color: cornsilk;
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 8px 10px ;
+  text-decoration: none;
+}
+
+.butt {
+  background-color: wheat;
+  margin-top: 415px;
+}
+
+
+
+
+
+
+
+
+
+

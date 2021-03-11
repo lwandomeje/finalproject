@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/landing.css">
+    <link rel="stylesheet" href="./styles/booking.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="..." alt="Logo" class="logo" />
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-link"><a href="./home.html">Home</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+      </nav>
+
+    <section class="contact">
+
+    <h1>BOOK YOUR ROOM</h1>
+    <div id="contact" class="border"></div>
+    <form id="myForm" onsubmit="event.preventDefault();booking()" class="contact-form" >
+  
+      <input for="name" name="name"   type="text" class="contact-form-text"  placeholder="Your name">
+  
+      <input for="lastname" name="lastname"  type="text"  class="contact-form-text" placeholder="Your lastname">
+
+      <input for="check-in" name="check_in" type="date" class="contact-form-text" placeholder="check-in/ 22-09-2021">
+
+      <input id="dateofbirth" for="check-out" name="check_out" type="date" class="contact-form-text" placeholder="check-out/ 29-09-2021">
+  
+      <input for="email" name="email" type="email" class="contact-form-text" placeholder="Your email">
+
+      <select for="room-type" name="room_type" class="select" >
+        <option value="Option 1">select your room type </option>
+        <option value="Option 2">single room</option>
+        <option value="Option 3">double room</option>
+        <option value="Option 4">deluxe room</option>
+        <option value="Option 4">family room</option>
+      </select>
+
+      <textarea for="message" name="m3ssage" class="contact-form-text" placeholder="Your message"></textarea>
+  
+  
+      <button  type="submit" class="contact-form-btn" value="send" > BOOK A ROOM</button>
+  
+    </form>
+
+      </section>
+      <script src="./scripts/booking.js"></script>
+</body>
+</html>

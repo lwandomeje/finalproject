@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/sign.css">
+</head>
+<body>
+    
+    <div id="contact" class="border"></div>
+    <form id="admin" onsubmit="event.preventDefault();logadmin()" class="contact-form" >
+        <h1>Sign in admin</h1>
+  
+      <input for="firstname" name="firstname"   type="text" class="contact-form-text"  placeholder="Your name">
+  
+      <input for="lastname" name="lastname"  type="text"  class="contact-form-text" placeholder="Your lastname">
+  
+      <button type="submit" class="contact-form-btn" value="send"> Sign in</button> 
+  
+    </form>
+<script src="./scripts/sign_in.js"></script>
+</body>
+</html>
