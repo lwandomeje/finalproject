@@ -1,6 +1,6 @@
 function getPosts() {
     // Fetch the data
-    fetch("http://127.0.0.1:5000/show-records/")
+    fetch("http://still-scrubland-29051.herokuapp.com/show-records/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
@@ -33,7 +33,7 @@ function getPosts() {
 
   function getUsers() {
     // Fetch the data
-    fetch("http://127.0.0.1:5000/show-register-records/")
+    fetch("http://still-scrubland-29051.herokuapp.com/show-register-records/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
@@ -63,7 +63,7 @@ function getPosts() {
 
   function getrooms() {
     // Fetch the data
-    fetch("http://127.0.0.1:5000/show-room-record/")
+    fetch("http://still-scrubland-29051.herokuapp.com/show-room-record/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);

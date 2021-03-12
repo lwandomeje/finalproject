@@ -3,7 +3,7 @@ function addabout(){
     const inputs = form.getElementsByTagName('input');
 
 
-    fetch('http://127.0.0.1:5000/about/',{
+    fetch('http://still-scrubland-29051.herokuapp.com/about/',{
         method : "POST",
         body:JSON.stringify({
             title:inputs[0].value,

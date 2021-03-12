@@ -6,7 +6,7 @@ function login(){
     let lastname = inputs[1].value;
 
     let log;
-    fetch('http://127.0.0.1:5000/show-register-records/')
+    fetch('http://still-scrubland-29051.herokuapp.com/show-register-records/')
     .then ((Response) => Response.json())
     .then ((json) =>{
         console.log(json);
@@ -19,7 +19,7 @@ function login(){
 
         console.log(logged);
         if (logged.length >= 1){
-            window.location.href = './index.html';
+            window.location.href = './home.html';
         }
     })
 }
@@ -32,7 +32,7 @@ function logadmin(){
     let lastname = inputs[1].value;
 
     let log;
-    fetch('http://127.0.0.1:5000/show-admin-records/')
+    fetch('http://still-scrubland-29051.herokuapp.com/show-admin-records/')
     .then ((Response) => Response.json())
     .then ((json) =>{
         console.log(json);

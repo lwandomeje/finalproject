@@ -3,7 +3,7 @@ function admin(){
     const inputs = form.getElementsByTagName('input');
 
 
-    fetch('http://127.0.0.1:5000/rejister-admin/',{
+    fetch('http://still-scrubland-29051.herokuapp.com/rejister-admin/',{
         method : "POST",
         body:JSON.stringify({
             firstname:inputs[0].value,

@@ -1,7 +1,7 @@
 
   function getPosts() {
     // Fetch the data
-    fetch("http://127.0.0.1:5000/show-room-record/")
+    fetch("http://still-scrubland-29051.herokuapp.com/show-room-record/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
@@ -17,7 +17,7 @@
     <h2>${blog.Beds}</h2>
     <h2>${blog.Max_Guests}</h2>
     <h2>${blog.Night}</h2>
-    <button class="butt"> book room</button>
+    <a class="butt" href="./book.html">Book A Room</a>
     </div>`;
     let list = document.getElementById("rooms");
     console.log("Hello");

@@ -42,7 +42,7 @@ justify-content: space-between;
     height: 28px;
 }
 
-/* Media query to change display options of about section */
+/* Media query to change display options of room section */
 @media screen and (max-width: 768px) {
     .room-content {
       flex-wrap: nowrap;
