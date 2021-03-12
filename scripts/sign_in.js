@@ -6,7 +6,7 @@ function login(){
     let lastname = inputs[1].value;
 
     let log;
-    fetch('http://still-scrubland-29051.herokuapp.com/show-register-records/')
+    fetch('https://still-scrubland-29051.herokuapp.com/show-register-records/')
     .then ((Response) => Response.json())
     .then ((json) =>{
         console.log(json);

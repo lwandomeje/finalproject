@@ -3,7 +3,7 @@ function register(){
     const inputs = form.getElementsByTagName('input');
 
 
-    fetch('http://still-scrubland-29051.herokuapp.com/rejister-record/',{
+    fetch('https://still-scrubland-29051.herokuapp.com/rejister-record/',{
         method : "POST",
         body:JSON.stringify({
             firstname:inputs[0].value,
