@@ -33,7 +33,7 @@ function getPosts() {
 
   function getUsers() {
     // Fetch the data
-    fetch("http://still-scrubland-29051.herokuapp.com/show-register-records/")
+    fetch("https://still-scrubland-29051.herokuapp.com/show-register-records/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
@@ -63,7 +63,7 @@ function getPosts() {
 
   function getrooms() {
     // Fetch the data
-    fetch("http://still-scrubland-29051.herokuapp.com/show-room-record/")
+    fetch("https://still-scrubland-29051.herokuapp.com/show-room-record/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
