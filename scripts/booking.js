@@ -6,7 +6,7 @@ function booking(){
 
 
 
-    fetch('http://still-scrubland-29051.herokuapp.com/add-new-record/',{
+    fetch('https://still-scrubland-29051.herokuapp.com/add-new-record/',{
 
         method :"POST",
         body: JSON.stringify({

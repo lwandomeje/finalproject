@@ -1,7 +1,7 @@
 
   function getPosts() {
     // Fetch the data
-    fetch("http://still-scrubland-29051.herokuapp.com/show-room-record/")
+    fetch("https://still-scrubland-29051.herokuapp.com/show-room-record/")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);

@@ -3,7 +3,7 @@ function addroom(){
     const inputs = form.getElementsByTagName('input');
 
 
-    fetch('http://still-scrubland-29051.herokuapp.com/add-room/',{
+    fetch('https://still-scrubland-29051.herokuapp.com/add-room/',{
         method : "POST",
         body:JSON.stringify({
             room_type:inputs[0].value,
