@@ -32,7 +32,7 @@ function logadmin(){
     let lastname = inputs[1].value;
 
     let log;
-    fetch('http://still-scrubland-29051.herokuapp.com/show-admin-records/')
+    fetch('https://still-scrubland-29051.herokuapp.com/show-admin-records/')
     .then ((Response) => Response.json())
     .then ((json) =>{
         console.log(json);
