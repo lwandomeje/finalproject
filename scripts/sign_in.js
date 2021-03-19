@@ -19,7 +19,7 @@ function login(){
 
         console.log(logged);
         if (logged.length >= 1){
-            window.location.href = './home.html';
+            window.location.href = 'book.html';
         }
     })
 }

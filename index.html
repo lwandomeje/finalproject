@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/sign.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/rooms.css">
 </head>
 <body>
-    <section class="register">
+   <nav class="navbar">
+      <a href="./admin_login.html"> admin Log In</a>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="#index">Home</a></li>
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link"><a href="register.html">Room</a></li>
+    <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+   </nav>
 
-        <form id="register-Form" onsubmit="event.preventDefault();register()" class="contact-form" >
-    
-        <h1>Register</h1>
+   <header id="index" class="landing">
+     <h1>DESTINATION OF YOUR DREAMS</h1>
+     <a class="test" href="register.html">Book A Room</a>
+   </header>
+
       
-          <input for="firstname" name="firstname"   type="text" class="contact-form-text"  placeholder="Your name">
-      
-          <input for="lastname" name="lastname"  type="text"  class="contact-form-text" placeholder="Your lastname">
-      
-          <input for="email" name="email" type="email" class="contact-form-text" placeholder="Your email">
-      
-          <button type="submit" class="contact-form-btn" value="send"> register</button> <br>
-          <a href="signIN.html">sign in</a>  <br>   <a href="admin_login.html"> admin Log In</a>
-    
-    
-      
-        </form>
+    <section class="rooms" id="rooms">
+      <h1 class="h1">ROOMS</h1>
     </section>
 
-<script src="scripts/register.js"></script>
+
+    <script src="scripts/landing.js"></script>
+    <script src="scripts/rooms.js"></script>
 </body>
 </html>

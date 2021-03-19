@@ -17,7 +17,7 @@
     <h2>${blog.Beds}</h2>
     <h2>${blog.Max_Guests}</h2>
     <h2>${blog.Night}</h2>
-    <a class="butt" href="./book.html">Book A Room</a>
+    <a class="butt" href="register.html">Book A Room</a>
     </div>`;
     let list = document.getElementById("rooms");
     console.log("Hello");

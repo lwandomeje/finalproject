@@ -9,7 +9,7 @@ function getPosts() {
   }
 
   function deleteItem(id) {
-    let apiurl ="http://127.0.0.1:5000/delete-booking/" + id;
+    let apiurl ="https://still-scrubland-29051.herokuapp.com/delete-booking/" + id;
     alert("Deleted");
     fetch(apiurl)
      .then((response) => response.json())
