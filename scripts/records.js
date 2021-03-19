@@ -7,12 +7,20 @@ function getPosts() {
         json.forEach((blog) => createBlogItem(blog));
       });
   }
-  
+
+  function deleteItem(id) {
+    let apiurl ="http://127.0.0.1:5000/delete-booking/" + id;
+    alert("Deleted");
+    fetch(apiurl)
+     .then((response) => response.json())
+     .then((json) =>{
+       console.log(json);
+     });
+  }
+
   function createBlogItem(blog) {
     const item = `
-    
     <table>
-
        <tr di="records${blog.id}">
            <td>${blog.id}</td>
            <td>${blog.name}</td>
@@ -22,6 +30,7 @@ function getPosts() {
            <td>${blog.email}</td>
            <td>${blog.room_type}</td>
            <td>${blog.message}</td>
+           <td><button id= "booking_id" onclick="event.preventDefault();deleteItem(${blog.id});" type="button">Delete</button></td>
        </tr>
 `;
     let list = document.getElementById("booking-records");

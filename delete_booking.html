@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/sign.css">
+</head>
+<body>
+    <section class="register">
+
+        <form id="delete-Form" onsubmit="event.preventDefault();cancel()" class="contact-form" >
+    
+        <h1>delete booking</h1>
+      
+          <input for="firstname" name="firstname"   type="text" class="contact-form-text"  placeholder="Your name">
+      
+          <input for="lastname" name="lastname"  type="text"  class="contact-form-text" placeholder="Your lastname">
+      
+          <input for="booking_id" name="booking_id" type="text" class="contact-form-text" placeholder="id">
+      
+          <button type="submit" class="contact-form-btn" value="send"> Delete</button> <br>
+      
+        </form>
+    </section>
+
+<script src="scripts/register.js"></script>
+</body>
+</html>
